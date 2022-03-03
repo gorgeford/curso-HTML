@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    Algunos atributos que estan disponibles para la mayoria de etiquetas en HTML
+
+    class -> este atributo se usa para dar estilos a traves de css
+
+    id -> es un identificador unico que se utiliza para seleccionar el elemento desde j5 y para hacer navegacion a traves de anclas 
+    
+    title -> es un atributo que ayuda a al accesibilidad mostrando una descripcion del elemento al mque pertenece 
+
+    data -> es un atributo que nos permite guardar al 
+    gun valor en la estiqueta HTML
+
+-->
+
+<body>
+    <p class="parrafo-1">clases</p>
+    <p id="parrafo">Identificadora traves de un id</p>
+    <p>titulo con tooltip</p>
+    <p id="parrafo-2"data-ejmplo=¨datos de ejemplo¨>datos pasados en la etiqueta</p>    
+
+    <script>
+        const p = document.getElementById(¨parrafo¨)
+        const parrafo2 = document.getElementById(¨parrafo-2¨)
+
+        console.log(p.textcontent)
+        console.log(parrafo2.ejemplo)
+    </script>
+    
+</body>
+</html>
